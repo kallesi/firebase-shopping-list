@@ -1,0 +1,54 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+    background-color: antiquewhite;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 30px auto;
+    
+
+
+}
+
+img {
+
+    width: 250px;
+    margin: 0 auto;
+
+}
+
+input {
+    color: dimgray;
+    background-color: lightgray;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 20px;
+    border-color: transparent;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+}
+
+
+
+
+button {
+
+    color: white;
+    background-color: crimson;
+    border-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 20px;
+    border-color: transparent;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    margin-top: 10px;
+
+
+}
