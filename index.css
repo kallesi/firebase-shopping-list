@@ -4,6 +4,7 @@ body {
     padding: 0;
     font-family: "Rubik", sans-serif;
     background-color: antiquewhite;
+    user-select: none;
 }
 
 .container {
@@ -11,7 +12,7 @@ body {
     flex-direction: column;
     max-width: 320px;
     margin: 30px auto;
-    
+
 
 
 }
@@ -49,6 +50,36 @@ button {
     text-align: center;
     font-family: "Rubik", sans-serif;
     margin-top: 10px;
+}
+
+button:hover {
+    color: white;
+    background-color: brown;
+    cursor: pointer;
+}
 
 
+ul {
+    list-style-type: none;
+    /* removes bullet points */
+    padding: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    
+    
+}
+
+li {
+    font-size: 20px;
+    background-color:ivory;
+    padding: 15px;
+    flex-grow: 0.5;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 1px 2px 1px 1px grey;
+}
+
+li:hover{
+    background-color: bisque;
 }
