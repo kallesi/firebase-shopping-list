@@ -2,7 +2,8 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebas
 import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 
 const appSettings = {
-    databaseURL: "https://playground-832ca-default-rtdb.asia-southeast1.firebasedatabase.app/"
+    databaseURL: ""
+    
 }
 
 
@@ -26,7 +27,7 @@ addButtonEl.addEventListener("click", function () {
 //The Onvalue function scans for changes in the database
 onValue(shoppingListInDB, function (snapshot) {
 
-    if(snapshot.exists()) {
+    if (snapshot.exists()) {
         let itemsArray = Object.entries(snapshot.val())
         clearShoppingListEl()
         for (let i = 0; i < itemsArray.length; i++) {
@@ -57,7 +58,7 @@ function appendItemToShoppingListEl(itemID, itemValue) {
     shoppingListEl.append(newEl)
     newEl.id = itemID
 
-    
+
     newEl.addEventListener("click", function () {
 
         let locationOnDB = ref(database, `shoppingList/${itemID}`)
@@ -66,6 +67,5 @@ function appendItemToShoppingListEl(itemID, itemValue) {
 
 
 }
-
 
 
