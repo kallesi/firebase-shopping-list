@@ -3,7 +3,6 @@ import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com
 
 const appSettings = {
     databaseURL: ""
-    
 }
 
 
